@@ -18,16 +18,16 @@ function CommentForm({ slug }) {
   const sendHandler = () => {
     if (name && email && text) {
       createComment();
+      toast.success("کامنت با موفقیت ارسال شد و منتظر تایید می باشد", {
+        position: "top-center",
+      });
+      
     } else {
       toast.warn("لطفا تمام فیلد ها را پر کنید", { position: "top-center" });
     }
   };
-  
-  // if (data) {
-  //     toast.success("کامنت با موفقیت ارسال شد و منتظر تایید می باشد", {
-  //       position: "top-center",
-  //     });
-  // }
+
+
 
   return (
     <Grid
