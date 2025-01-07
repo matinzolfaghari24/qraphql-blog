@@ -7,8 +7,8 @@ import { Avatar, Box, Container, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import sanitizeHtml from "sanitize-html";
 import ArrowBackRounded from "@mui/icons-material/ArrowBackRounded";
-import CommentForm from "../commrent/CommentForm";
-import Comments from "../commrent/Comments";
+import CommentForm from "../comment/CommentForm";
+import Comments from "../comment/Comments";
 
 function BlogPage() {
   const { slug } = useParams();
